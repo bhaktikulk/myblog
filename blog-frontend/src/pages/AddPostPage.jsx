@@ -448,7 +448,7 @@ const AddPostPage = () => {
     try {
       if (existingPost) {
         // If editing, send PUT request
-        await axios.put(`http://localhost:5000/api/posts/${existingPost._id}`, formData);
+        await axios.put(`https://myblog-api-one.vercel.app/api/posts/${existingPost._id}`, formData);
       } else {
         // If adding new post, send POST request
         await axios.post("http://localhost:5000/api/posts", formData);
