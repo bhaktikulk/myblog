@@ -51,7 +51,7 @@ const ListPostsPage = () => {
   // Function to fetch all posts
   const fetchPosts = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/posts");
+      const response = await axios.get("https://myblog-api-one.vercel.app/api/posts");
       setPosts(response.data);
     } catch (error) {
       console.error("Error fetching posts:", error);
@@ -67,7 +67,7 @@ const ListPostsPage = () => {
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this post?")) {
       try {
-        await axios.delete(`http://localhost:5000/api/posts/${id}`);
+        await axios.delete(`https://myblog-api-one.vercel.app/api/posts/${id}`);
         setPosts(posts.filter((post) => post._id !== id)); // Remove post from UI
       } catch (error) {
         console.error("Error deleting post:", error);
