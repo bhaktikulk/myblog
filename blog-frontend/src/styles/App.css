@@ -1,0 +1,263 @@
+/* src/styles/App.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.home-page {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Page Styling */
+/* Apply background color to the entire page */
+body {
+    background-color: #6c53f2; /* Purple background for whole page */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style for the add-post-page container */
+  .add-post-page {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    background-color: #fff; /* White background for the form */
+  }
+  
+  /* Heading style */
+  .add-post-page h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #6c53f2; /* Use the same purple color for the heading */
+  }
+  
+  /* Form layout */
+  .add-post-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Input and textarea styling */
+  .add-post-page input,
+  .add-post-page textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* File input styling */
+  .add-post-page input[type="file"] {
+    padding: 8px 12px;
+    font-size: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* Textarea resize */
+  .add-post-page textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  /* Button styling */
+  .add-post-page button {
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #6c53f2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-post-page button:hover {
+    background-color: #5744d9;
+  }
+  
+  /* Image styling */
+  .add-post-page img {
+    margin-top: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    height: auto;
+  }
+  
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Apply background color to the entire page */
+body {
+  background-color: #6c53f2; /* Purple background for whole page */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Style for the add-post-page container */
+.add-post-page {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  background-color: #fff; /* White background for the form */
+}
+
+/* Heading style */
+.add-post-page h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #6c53f2; /* Use the same purple color for the heading */
+}
+
+/* Form layout */
+.add-post-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input and textarea styling */
+.add-post-page input,
+.add-post-page textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #333;
+}
+
+/* File input styling */
+.add-post-page input[type="file"] {
+  padding: 8px 12px;
+  font-size: 1rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Textarea resize */
+.add-post-page textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* Button styling */
+.add-post-page button {
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: #6c53f2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-post-page button:hover {
+  background-color: #5744d9;
+}
+
+/* Image styling */
+.add-post-page img {
+  margin-top: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  object-fit: cover;
+  height: auto;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.list-posts-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Align items vertically */
+    height: 100vh;
+    text-align: center; /* Center text */
+}
+
+.list-posts-page ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center list items */
+}
+
+.list-posts-page li {
+    margin: 20px 0;
+    text-align: center; /* Center text inside the list */
+}
+
+.list-posts-page img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center image */
+}

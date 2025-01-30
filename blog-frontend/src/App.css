@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+form input,
+form textarea {
+  width: 100%;
+}
+
+.blog-list {
+  padding: 20px;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.post img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
